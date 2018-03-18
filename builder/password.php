@@ -23,6 +23,7 @@ $usertype = mysqli_real_escape_string($con, $_POST['type']);
             setcookie("BUILDER_COOKIE_USERNAME", $data->username, time() + (86400 * 30)*60, "/");
           }
           $_SESSION["BUILDER_SESS_USERID"]=$data->id;
+          $_SESSION["BUILDER_SESS_USERNAME"]=$data->username;
           $_SESSION["BUILDER_SESS_USERTYPE"]=$data->usertype;
           $_SESSION["BUILDER_SESS_USERPASSWORD"]=$data->password;
           location(BUILDER_URL."deskboard.php");

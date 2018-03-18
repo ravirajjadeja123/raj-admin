@@ -38,7 +38,7 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <i class="fa fa-cogs"></i>
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs"><?php echo (isset($_SESSION['ADMIN_SESS_USERNAME'])!='')?ucfirst($_SESSION['ADMIN_SESS_USERNAME']):''; ?></span>
             </a>
