@@ -23,6 +23,7 @@ $password = mysqli_real_escape_string($con, $_POST['password']);
             setcookie("ADMIN_COOKIE_USERNAME", $data->username, time() + (86400 * 30)*60, "/");
           }
           $_SESSION["ADMIN_SESS_USERID"]=$data->id;
+          $_SESSION["ADMIN_SESS_USERNAME"]=$data->username;
           $_SESSION["ADMIN_SESS_USERTYPE"]=$data->type;
           $_SESSION["ADMIN_SESS_USERPASSWORD"]=$data->password;
           location(ADMIN_URL."deskboard.php");

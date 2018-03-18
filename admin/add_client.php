@@ -115,7 +115,6 @@ if(isset($_REQUEST['mode']))
         <li class="active"><?php echo $pagetitle; ?></li>
       </ol>
     </section>
-
     <!-- Main content -->
     <section class="content">
       <div class="row">

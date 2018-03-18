@@ -40,7 +40,7 @@
               <!-- The user image in the navbar-->
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs"><?php echo (isset($_COOKIE['BUILDER_COOKIE_USERNAME'])!='')?ucfirst($_COOKIE['BUILDER_COOKIE_USERNAME']):''; ?></span>
+              <span class="hidden-xs"><?php echo (isset($_SESSION['ADMIN_SESS_USERNAME'])!='')?ucfirst($_SESSION['ADMIN_SESS_USERNAME']):''; ?></span>
             </a>
             <ul class="dropdown-menu" style="width:auto;padding: 5px 0;">
               <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
